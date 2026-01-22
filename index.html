@@ -390,7 +390,7 @@
       align-items: center;
     }
 
-    . {
+    .logo {
       width: 60px;
       height: 60px;
       border-radius: 12px;
@@ -534,9 +534,10 @@
     }
 
     .dish {
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 600;
       margin: 0 0 4px 0;
+        margin-top: 15px;
       font-family: var(--ff-heading);
       line-height: 1.3;
     }
@@ -544,7 +545,7 @@
     .desc {
       color: var(--muted);
       font-size: 13px;
-      margin-top: 4px;
+      margin-top: 50px;
     }
 
     .card-footer {
@@ -1189,7 +1190,7 @@
   <div class="container">
     <!-- Cafe Header - Original Style -->
     <div class="cafe-header">
-      <img src="logo5.png" alt="Logo" style="width:400px; height:auto;">
+      <img src="logo5.png" alt="Logo" style="width:300px; height:auto;">
       <div class="cafe-name">Hotel Maharaja Palace</div>
       <div class="cafe-subtitle">प्युअर व्हेज</div>
       <div class="location-info">
@@ -1202,10 +1203,10 @@
           <span class="symbol"></span>
           <span>Veg</span>
         </div>
-        <div class="nonveg">
+        <!-- <div class="nonveg">
           <span class="symbol"></span>
           <span>Non Veg</span>
-        </div>
+        </div> -->
       </div>
 
       <!-- Price Notes Section -->
@@ -1415,132 +1416,132 @@
   <script>
     // Menu Data   
     const data =
-      [
-  { "id": 1, "cat": "पनीर सब्जी", "name": "पनीर मसाला / PANEER MASALA", "price": "139 RS", "desc": "Paneer in spicy onion-tomato gravy", "tags": ["Veg"], "img": "img/paneer_masala.jpg" },
-  { "id": 2, "cat": "पनीर सब्जी", "name": "मटर पनीर / MATAR PANEER", "price": "139 RS", "desc": "Paneer and green peas curry", "tags": ["Veg"], "img": "img/matar_paneer.jpg" },
-  { "id": 3, "cat": "पनीर सब्जी", "name": "पनीर टिकका / PANEER TIKKA", "price": "149 RS", "desc": "Grilled paneer in spiced gravy", "tags": ["Veg"], "img": "img/paneer_tikka.jpg" },
-  { "id": 4, "cat": "पनीर सब्जी", "name": "पनीर बटर मसाला / PANEER BUTTER MASALA", "price": "159 RS", "desc": "Paneer in rich creamy tomato sauce", "tags": ["Veg"], "img": "img/paneer_butter.jpg" },
-  { "id": 5, "cat": "पनीर सब्जी", "name": "पनीर भुर्जी / PANEER BHURJI", "price": "219 RS", "desc": "Spiced scrambled cottage cheese", "tags": ["Veg"], "img": "img/paneer_bhurji.jpg" },
-  { "id": 6, "cat": "पनीर सब्जी", "name": "पनीर तवा / PANEER TAWA", "price": "159 RS", "desc": "Paneer cooked on a flat griddle", "tags": ["Veg"], "img": "img/paneer_tawa.jpg" },
-  { "id": 7, "cat": "पनीर सब्जी", "name": "स्पे. पनीर महाराजा / SPECIAL PANEER MAHARAJA", "price": "179 RS", "desc": "Chef's special royal paneer dish", "tags": ["Veg"], "img": "img/paneer_maharaja.jpg" },
-  { "id": 8, "cat": "पनीर सब्जी", "name": "पालक पनीर / PALAK PANEER", "price": "149 RS", "desc": "Paneer in fresh spinach puree", "tags": ["Veg"], "img": "img/palak_paneer.jpg" },
-  { "id": 9, "cat": "पनीर सब्जी", "name": "पनीर दो प्याजा / PANEER DO PYAZA", "price": "159 RS", "desc": "Paneer with double quantity of onions", "tags": ["Veg"], "img": "img/paneer_do_pyaza.jpg" },
-  { "id": 10, "cat": "पनीर सब्जी", "name": "साही पनीर / SHAHI PANEER", "price": "179 RS", "desc": "Royal paneer in mild white gravy", "tags": ["Veg"], "img": "img/shahi_paneer.jpg" },
-  { "id": 11, "cat": "पनीर सब्जी", "name": "कड़ाई पनीर / KADHAI PANEER", "price": "179 RS", "desc": "Paneer with bell peppers and spices", "tags": ["Veg"], "img": "img/kadhai_paneer.jpg" },
-  { "id": 12, "cat": "पनीर सब्जी", "name": "पनीर अंगारा / PANEER ANGARA", "price": "159 RS", "desc": "Smoky and spicy paneer curry", "tags": ["Veg"], "img": "img/paneer_angara.jpg" },
-  { "id": 13, "cat": "पनीर सब्जी", "name": "पनीर काजु / PANEER KAJU", "price": "199 RS", "desc": "Paneer cooked with rich cashew nuts", "tags": ["Veg"], "img": "img/paneer_kaju.jpg" },
-  { "id": 14, "cat": "पनीर सब्जी", "name": "पनीर मखनवाला / PANEER MAKHANWALA", "price": "169 RS", "desc": "Paneer in velvety buttery gravy", "tags": ["Veg"], "img": "img/paneer_makhanwala.jpg" },
-  { "id": 15, "cat": "पनीर सब्जी", "name": "पनीर अमृतसरी / PANEER AMRITSARI", "price": "169 RS", "desc": "Amritsari style tangy paneer", "tags": ["Veg"], "img": "img/paneer_amritsari.jpg" },
-  { "id": 16, "cat": "पनीर सब्जी", "name": "पनीर लसुनीया / PANEER LASUNIYA", "price": "159 RS", "desc": "Paneer flavored with roasted garlic", "tags": ["Veg"], "img": "img/paneer_lasuniya.jpg" },
-  { "id": 17, "cat": "पनीर सब्जी", "name": "पनीर लबाबदार / PANEER LABABDAR", "price": "189 RS", "desc": "Creamy and rich restaurant style paneer", "tags": ["Veg"], "img": "img/paneer_lababdar.jpg" },
+     [
+  { "id": 1, "cat": "पनीर सब्जी", "name": "पनीर मसाला / PANEER MASALA", "price": "139 RS", "desc": "Fresh paneer cubes simmered in a spicy, aromatic onion-tomato gravy with traditional Indian herbs.", "tags": ["Veg"], "img": "img/paneer_masala.jpg" },
+  { "id": 2, "cat": "पनीर सब्जी", "name": "मटर पनीर / MATAR PANEER", "price": "139 RS", "desc": "A classic North Indian dish featuring tender paneer and green peas cooked in a mild and flavorful curry.", "tags": ["Veg"], "img": "img/matar_paneer.jpg" },
+  { "id": 3, "cat": "पनीर सब्जी", "name": "पनीर टिकका / PANEER TIKKA", "price": "149 RS", "desc": "Marinated and grilled paneer cubes served in a rich, smokey, and spiced tikka masala gravy.", "tags": ["Veg"], "img": "img/paneer_tikka.jpg" },
+  { "id": 4, "cat": "पनीर सब्जी", "name": "पनीर बटर मसाला / PANEER BUTTER MASALA", "price": "159 RS", "desc": "Soft paneer pieces in a silky, smooth, and creamy tomato-based sauce with a generous touch of butter.", "tags": ["Veg"], "img": "img/paneer_butter.jpg" },
+  { "id": 5, "cat": "पनीर सब्जी", "name": "पनीर भुर्जी / PANEER BHURJI", "price": "219 RS", "desc": "Savory scrambled cottage cheese sautéed with onions, tomatoes, and a blend of vibrant spices.", "tags": ["Veg"], "img": "img/paneer_bhurji.jpg" },
+  { "id": 6, "cat": "पनीर सब्जी", "name": "पनीर तवा / PANEER TAWA", "price": "159 RS", "desc": "Paneer chunks stir-fried on a flat griddle (Tawa) with crunchy bell peppers and fresh ground spices.", "tags": ["Veg"], "img": "img/paneer_tawa.jpg" },
+  { "id": 7, "cat": "पनीर सब्जी", "name": "स्पे. पनीर महाराजा / SPECIAL PANEER MAHARAJA", "price": "179 RS", "desc": "A royal preparation of paneer cooked in a rich, exotic gravy topped with cream and secret house spices.", "tags": ["Veg"], "img": "img/paneer_maharaja.jpg" },
+  { "id": 8, "cat": "पनीर सब्जी", "name": "पालक पनीर / PALAK PANEER", "price": "149 RS", "desc": "Nutritious and delicious paneer cubes served in a thick, smooth puree of fresh spinach and garlic.", "tags": ["Veg"], "img": "img/palak_paneer.jpg" },
+  { "id": 9, "cat": "पनीर सब्जी", "name": "पनीर दो प्याजा / PANEER DO PYAZA", "price": "159 RS", "desc": "A delectable dish where paneer is cooked with onions added in two stages for a sweet and crunchy texture.", "tags": ["Veg"], "img": "img/paneer_do_pyaza.jpg" },
+  { "id": 10, "cat": "पनीर सब्जी", "name": "साही पनीर / SHAHI PANEER", "price": "179 RS", "desc": "A Mughlai delicacy consisting of paneer in a creamy, white, mildly sweet gravy made of nuts and yogurt.", "tags": ["Veg"], "img": "img/shahi_paneer.jpg" },
+  { "id": 11, "cat": "पनीर सब्जी", "name": "कड़ाई पनीर / KADHAI PANEER", "price": "179 RS", "desc": "Paneer cooked in a traditional 'Kadhai' with freshly ground Kadai masala, onions, and capsicum.", "tags": ["Veg"], "img": "img/kadhai_paneer.jpg" },
+  { "id": 12, "cat": "पनीर सब्जी", "name": "पनीर अंगARA / PANEER ANGARA", "price": "159 RS", "desc": "A fiery and smoky paneer curry flavored with charcoal smoke for an authentic 'Angara' (charcoal) taste.", "tags": ["Veg"], "img": "img/paneer_angara.jpg" },
+  { "id": 13, "cat": "पनीर सब्जी", "name": "पनीर काजु / PANEER KAJU", "price": "199 RS", "desc": "A premium combination of soft paneer and crunchy roasted cashews in a rich, buttery golden gravy.", "tags": ["Veg"], "img": "img/paneer_kaju.jpg" },
+  { "id": 14, "cat": "पनीर सब्जी", "name": "पनीर मखनवाला / PANEER MAKHANWALA", "price": "169 RS", "desc": "Classic Makhanwala style paneer cooked in a sweet and tangy tomato-cream base with honey and butter.", "tags": ["Veg"], "img": "img/paneer_makhanwala.jpg" },
+  { "id": 15, "cat": "पनीर सब्जी", "name": "पनीर अमृतसरी / PANEER AMRITSARI", "price": "169 RS", "desc": "Authentic Punjabi style paneer cooked with ajwain and a tangy, spicy thick gravy.", "tags": ["Veg"], "img": "img/paneer_amritsari.jpg" },
+  { "id": 16, "cat": "पनीर सब्जी", "name": "पनीर लसुनीया / PANEER LASUNIYA", "price": "159 RS", "desc": "For garlic lovers: Paneer cubes tossed in a rich gravy dominated by the flavor of roasted garlic.", "tags": ["Veg"], "img": "img/paneer_lasuniya.jpg" },
+  { "id": 17, "cat": "पनीर सब्जी", "name": "पनीर लबाबदार / PANEER LABABDAR", "price": "189 RS", "desc": "An indulgent restaurant-style dish with grated paneer and cubes in a creamy, slightly sweet and spicy gravy.", "tags": ["Veg"], "img": "img/paneer_lababdar.jpg" },
 
-  { "id": 18, "cat": "वेज स्पे. सब्जी", "name": "दम आलु / DUM ALOO", "price": "89 RS", "desc": "Slow cooked spiced potatoes", "tags": ["Veg"], "img": "img/dum_aloo.jpg" },
-  { "id": 19, "cat": "वेज स्पे. सब्जी", "name": "स्पेशल काजु मसाला / SPECIAL KAJU MASALA", "price": "189 RS", "desc": "Cashews in thick spicy gravy", "tags": ["Veg"], "img": "img/kaju_masala.jpg" },
-  { "id": 20, "cat": "वेज स्पे. सब्जी", "name": "काजु करी / KAJU CURRY", "price": "199 RS", "desc": "Creamy cashew nut curry", "tags": ["Veg"], "img": "img/kaju_curry.jpg" },
-  { "id": 21, "cat": "वेज स्पे. सब्जी", "name": "मलाई कोप्ता / MALAI KOFTA", "price": "189 RS", "desc": "Fried dumplings in creamy gravy", "tags": ["Veg"], "img": "img/malai_kofta.jpg" },
-  { "id": 22, "cat": "वेज स्पे. सब्जी", "name": "वेज कड़ाई/वेज हांडी / VEG KADHAI/HANDI", "price": "159 RS", "desc": "Mixed veg in spicy gravy", "tags": ["Veg"], "img": "img/veg_handi.jpg" },
-  { "id": 23, "cat": "वेज स्पे. सब्जी", "name": "वेज जयपुरी / VEG JAIPURI", "price": "139 RS", "desc": "Jaipur style veg with papad", "tags": ["Veg"], "img": "img/veg_jaipuri.jpg" },
-  { "id": 24, "cat": "वेज स्पे. सब्जी", "name": "वेज हेदराबादी / VEG HYDERABADI", "price": "149 RS", "desc": "Hyderabadi spicy green veg", "tags": ["Veg"], "img": "img/veg_hyderabadi.jpg" },
-  { "id": 25, "cat": "वेज स्पे. सब्जी", "name": "भींडी मसाला / BHINDI MASALA", "price": "139 RS", "desc": "Okra in spicy onion gravy", "tags": ["Veg"], "img": "img/bhindi_masala.jpg" },
-  { "id": 26, "cat": "वेज स्पे. सब्जी", "name": "भींडी फ्राय / BHINDI FRY", "price": "139 RS", "desc": "Crispy stir-fried okra", "tags": ["Veg"], "img": "img/bhindi_fry.jpg" },
-  { "id": 27, "cat": "वेज स्पे. सब्जी", "name": "जयपुरी गट्टा / JAIPURI GATTA", "price": "89 RS", "desc": "Gram flour dumplings in Rajasthani gravy", "tags": ["Veg"], "img": "img/jaipuri_gatta1.jpg" },
-  { "id": 28, "cat": "वेज स्पे. सब्जी", "name": "प्लेन पालक / PLAIN PALAK", "price": "79 RS", "desc": "Simple blended spinach dish", "tags": ["Veg"], "img": "img/plain_palak.jpg" },
-  { "id": 29, "cat": "वेज स्पे. सब्जी", "name": "सेव टमाटर / SEV TAMATAR", "price": "89 RS", "desc": "Spicy tomato gravy with crispy sev", "tags": ["Veg"], "img": "img/sev_tamatar.jpg" },
-  { "id": 30, "cat": "वेज स्पे. सब्जी", "name": "छोले मसाला / CHHOLE MASALA", "price": "89 RS", "desc": "Classic chickpeas masala", "tags": ["Veg"], "img": "img/chhole_masala.jpg" },
-  { "id": 31, "cat": "वेज स्पे. सब्जी", "name": "आलु प्याज मसाला / ALOO PYAZ MASALA", "price": "79 RS", "desc": "Potato and onion stir fry", "tags": ["Veg"], "img": "img/aloo_pyaz.jpg" },
-  { "id": 32, "cat": "वेज स्पे. सब्जी", "name": "बैंगन मसाला / BAINGAN MASALA", "price": "79 RS", "desc": "Spicy eggplant curry", "tags": ["Veg"], "img": "img/baingan_masala.jpg" },
-  { "id": 33, "cat": "वेज स्पे. सब्जी", "name": "बैंगन भरता / BAINGAN BHARTA", "price": "109 RS", "desc": "Roasted mashed eggplant with spices", "tags": ["Veg"], "img": "img/baingan_bharta.jpg" },
-  { "id": 34, "cat": "वेज स्पे. सब्जी", "name": "कडी पकोडा / KADI PAKODA", "price": "79 RS", "desc": "Yogurt curry with gram flour fritters", "tags": ["Veg"], "img": "img/kadi_pakoda.jpg" },
-  { "id": 35, "cat": "वेज स्पे. सब्जी", "name": "वेज कोलापुरी / VEG KOLHAPURI", "price": "129 RS", "desc": "Extra spicy Maharashtrian style veg", "tags": ["Veg"], "img": "img/veg_kolhapuri.jpg" },
-  { "id": 36, "cat": "वेज स्पे. सब्जी", "name": "वेज कोपता / VEG KOFTA", "price": "149 RS", "desc": "Vegetable dumplings in Indian gravy", "tags": ["Veg"], "img": "img/veg_kofta.jpg" },
+  { "id": 18, "cat": "वेज स्पे. सब्जी", "name": "दम आलु / DUM ALOO", "price": "89 RS", "desc": "Baby potatoes deep fried and slow-cooked (Dum) in a spicy and tangy yogurt-based gravy.", "tags": ["Veg"], "img": "img/dum_aloo.jpg" },
+  { "id": 19, "cat": "वेज स्पे. सब्जी", "name": "स्पेशल काजु मसाला / SPECIAL KAJU MASALA", "price": "189 RS", "desc": "Whole cashew nuts fried and served in a rich, thick, and spicy masala gravy.", "tags": ["Veg"], "img": "img/kaju_masala.jpg" },
+  { "id": 20, "cat": "वेज स्पे. सब्जी", "name": "काजु करी / KAJU CURRY", "price": "199 RS", "desc": "Roasted cashews cooked in a smooth, creamy, and mildly spiced luxury gravy.", "tags": ["Veg"], "img": "img/kaju_curry.jpg" },
+  { "id": 21, "cat": "वेज स्पे. सब्जी", "name": "मलाई कोप्ता / MALAI KOFTA", "price": "189 RS", "desc": "Deep-fried potato and paneer balls (koftas) served in a rich, creamy, and slightly sweet white gravy.", "tags": ["Veg"], "img": "img/malai_kofta.jpg" },
+  { "id": 22, "cat": "वेज स्पे. सब्जी", "name": "वेज कड़ाई/वेज हांडी / VEG KADHAI/HANDI", "price": "159 RS", "desc": "A colorful medley of seasonal vegetables cooked with aromatic spices in a traditional handi or kadhai.", "tags": ["Veg"], "img": "img/veg_handi.jpg" },
+  { "id": 23, "cat": "वेज स्पे. सब्जी", "name": "वेज जयपुरी / VEG JAIPURI", "price": "139 RS", "desc": "A traditional Rajasthani dish with mixed vegetables, garnished with roasted papad for a unique crunch.", "tags": ["Veg"], "img": "img/veg_jaipuri.jpg" },
+  { "id": 24, "cat": "वेज स्पे. सब्जी", "name": "वेज हेदराबादी / VEG HYDERABADI", "price": "149 RS", "desc": "A spicy and flavorful green vegetable curry made with spinach and authentic Hyderabadi masalas.", "tags": ["Veg"], "img": "img/veg_hyderabadi.jpg" },
+  { "id": 25, "cat": "वेज स्पे. सब्जी", "name": "भींडी मसाला / BHINDI MASALA", "price": "139 RS", "desc": "Fresh okra sautéed with onions, tomatoes, and a blend of dry Indian spices.", "tags": ["Veg"], "img": "img/bhindi_masala.jpg" },
+  { "id": 26, "cat": "वेज स्पे. सब्जी", "name": "भींडी फ्रay / BHINDI FRY", "price": "139 RS", "desc": "Crispy deep-fried okra seasoned with chaat masala and salt for a perfect side dish.", "tags": ["Veg"], "img": "img/bhindi_fry.jpg" },
+  { "id": 27, "cat": "वेज स्पे. सब्जी", "name": "जयपुरी गट्टा / JAIPURI GATTA", "price": "89 RS", "desc": "Authentic Rajasthani gram flour dumplings cooked in a spicy and tangy curd-based gravy.", "tags": ["Veg"], "img": "img/jaipuri_gatta1.jpg" },
+  { "id": 28, "cat": "वेज स्पे. सब्जी", "name": "प्लेन पालक / PLAIN PALAK", "price": "79 RS", "desc": "Freshly pureed spinach tempered with cumin and garlic, keeping it simple and healthy.", "tags": ["Veg"], "img": "img/plain_palak.jpg" },
+  { "id": 29, "cat": "वेज स्पे. सब्जी", "name": "सेव टमाटर / SEV TAMATAR", "price": "89 RS", "desc": "A popular Gujarati dish featuring spicy tomato gravy topped with crispy sev.", "tags": ["Veg"], "img": "img/sev_tamatar.jpg" },
+  { "id": 30, "cat": "वेज स्पे. सब्जी", "name": "छोले मसाला / CHHOLE MASALA", "price": "89 RS", "desc": "Classic Punjabi style spicy chickpeas cooked with a special blend of chhole masala.", "tags": ["Veg"], "img": "img/chhole_masala.jpg" },
+  { "id": 31, "cat": "वेज स्पे. सब्जी", "name": "आलु प्याज मसाला / ALOO PYAZ MASALA", "price": "79 RS", "desc": "A homestyle stir-fry of potatoes and onions with traditional Indian tempering.", "tags": ["Veg"], "img": "img/aloo_pyaz.jpg" },
+  { "id": 32, "cat": "वेज स्पे. सब्जी", "name": "बैंगन मसाला / BAINGAN MASALA", "price": "79 RS", "desc": "Tender eggplants cooked in a spicy peanut and sesame-based thick masala gravy.", "tags": ["Veg"], "img": "img/baingan_masala.jpg" },
+  { "id": 33, "cat": "वेज स्पे. सब्जी", "name": "बैंगन भरता / BAINGAN BHARTA", "price": "109 RS", "desc": "Smokey roasted eggplant mashed and cooked with onions, tomatoes, and green chillies.", "tags": ["Veg"], "img": "img/baingan_bharta.jpg" },
+  { "id": 34, "cat": "वेज स्पे. सब्जी", "name": "कडी पकोडा / KADI PAKODA", "price": "79 RS", "desc": "Crispy onion fritters (pakodas) submerged in a creamy and tangy yogurt-based yellow curry.", "tags": ["Veg"], "img": "img/kadi_pakoda.jpg" },
+  { "id": 35, "cat": "वेज स्पे. सब्जी", "name": "वेज कोलापुरी / VEG KOLHAPURI", "price": "129 RS", "desc": "An extra spicy Maharashtrian dish with mixed vegetables and a bold Kolhapuri spice blend.", "tags": ["Veg"], "img": "img/veg_kolhapuri.jpg" },
+  { "id": 36, "cat": "वेज स्पे. सब्जी", "name": "वेज कोपता / VEG KOFTA", "price": "149 RS", "desc": "Mix veg dumplings served in a medium-spiced Indian gravy made of onions and tomatoes.", "tags": ["Veg"], "img": "img/veg_kofta.jpg" },
 
-  { "id": 37, "cat": "सब्जी सदाबहार", "name": "मटर मसाला / MATAR MASALA", "price": "79 RS", "desc": "Green peas in spiced gravy", "tags": ["Veg"], "img": "img/matar_masala.jpg" },
-  { "id": 38, "cat": "सब्जी सदाबहार", "name": "आलु मटर / ALOO MATAR", "price": "69 RS", "desc": "Classic potato and peas curry", "tags": ["Veg"], "img": "img/aloo_matar.jpg" },
-  { "id": 39, "cat": "सब्जी सदाबहार", "name": "मेथी फ्राय / METHI FRY", "price": "79 RS", "desc": "Stir-fried fresh fenugreek", "tags": ["Veg"], "img": "img/methi_fry.jpg" },
-  { "id": 40, "cat": "सब्जी सदाबहार", "name": "लसुनीया बटाका / LASUNIYA BATAKA", "price": "89 RS", "desc": "Potatoes with rich garlic flavor", "tags": ["Veg"], "img": "img/lasuniya_bataka.jpg" },
-  { "id": 41, "cat": "सब्जी सदाबहार", "name": "गुजराती कडी / GUJARATI KADI", "price": "69 RS", "desc": "Sweet and tangy Gujarati style yogurt curry", "tags": ["Veg"], "img": "img/gujarati_kadi.jpg" },
-  { "id": 42, "cat": "सब्जी सदाबहार", "name": "राजस्थानी कडी / RAJASTHANI KADI", "price": "79 RS", "desc": "Spicy and sour Rajasthani style curry", "tags": ["Veg"], "img": "img/rajasthani_kadi.jpg" },
-  { "id": 43, "cat": "सब्जी सदाबहार", "name": "पापड मेथी की सब्जी / PAPAD METHI SABJI", "price": "89 RS", "desc": "Traditional fenugreek and papad curry", "tags": ["Veg"], "img": "img/papad_methi.jpg" },
-  { "id": 44, "cat": "सब्जी सदाबहार", "name": "सेवभाजी / SEV BHAJI", "price": "79 RS", "desc": "Spicy curry topped with sev", "tags": ["Veg"], "img": "img/sev_bhaji.jpg" },
-  { "id": 45, "cat": "सब्जी सदाबहार", "name": "सेवभाजी मिल्क / SEV BHAJI MILK", "price": "89 RS", "desc": "Sev bhaji cooked in milk gravy", "tags": ["Veg"], "img": "img/sev_bhaji_milk.jpg" },
-  { "id": 46, "cat": "सब्जी सदाबहार", "name": "चना मसाला / CHANA MASALA", "price": "139 RS", "desc": "Traditional chickpeas in thick gravy", "tags": ["Veg"], "img": "img/chana_masala.jpg" },
-  { "id": 47, "cat": "सब्जी सदाबहार", "name": "बेसन गटटा / BESAN GATTA", "price": "79 RS", "desc": "Gram flour rolls in spicy gravy", "tags": ["Veg"], "img": "img/besan_gatta.jpg" },
-  { "id": 48, "cat": "सब्जी सदाबहार", "name": "राजमा मसाला / RAJMA MASALA", "price": "79 RS", "desc": "Red kidney beans in onion-tomato gravy", "tags": ["Veg"], "img": "img/rajma_masala.jpg" },
+  { "id": 37, "cat": "सब्जी सदाबहार", "name": "मटर मसाला / MATAR MASALA", "price": "79 RS", "desc": "Green peas cooked in a well-seasoned, medium-spicy gravy for a simple yet satisfying meal.", "tags": ["Veg"], "img": "img/matar_masala.jpg" },
+  { "id": 38, "cat": "सब्जी सदाबहार", "name": "आलु मटर / ALOO MATAR", "price": "69 RS", "desc": "The comfort food of India: potatoes and peas cooked in a light and savory onion-tomato sauce.", "tags": ["Veg"], "img": "img/aloo_matar.jpg" },
+  { "id": 39, "cat": "सब्जी सदाबहार", "name": "मेथी फ्राय / METHI FRY", "price": "79 RS", "desc": "Fresh fenugreek leaves stir-fried with basic spices to retain their natural earthy flavor.", "tags": ["Veg"], "img": "img/methi_fry.jpg" },
+  { "id": 40, "cat": "सब्जी सदाबहार", "name": "लसुनीया बटाका / LASUNIYA BATAKA", "price": "89 RS", "desc": "Sautéed potato cubes flavored with a strong and aromatic tempering of garlic and red chillies.", "tags": ["Veg"], "img": "img/lasuniya_bataka.jpg" },
+  { "id": 41, "cat": "सब्जी सदाबहार", "name": "गुजराती कडी / GUJARATI KADI", "price": "69 RS", "desc": "A sweet and tangy yogurt curry from Gujarat, tempered with curry leaves and mustard seeds.", "tags": ["Veg"], "img": "img/gujarati_kadi.jpg" },
+  { "id": 42, "cat": "सब्जी सदाबहार", "name": "राजस्थानी कडी / RAJASTHANI KADI", "price": "79 RS", "desc": "A thick, spicy, and sour yogurt-based curry made the authentic Rajasthani way.", "tags": ["Veg"], "img": "img/rajasthani_kadi.jpg" },
+  { "id": 43, "cat": "सब्जी सदाबहार", "name": "पापड मेथी की सब्जी / PAPAD METHI SABJI", "price": "89 RS", "desc": "A unique combination of bitter fenugreek seeds and crispy papad in a tangy gravy.", "tags": ["Veg"], "img": "img/papad_methi.jpg" },
+  { "id": 44, "cat": "सब्जी सदाबहार", "name": "सेवभाजी / SEV BHAJI", "price": "79 RS", "desc": "A Khandeshi specialty: a super spicy red gravy served with a heap of crunchy gathiya sev.", "tags": ["Veg"], "img": "img/sev_bhaji.jpg" },
+  { "id": 45, "cat": "सब्जी सदाबहार", "name": "सेवभाजी मिल्क / SEV BHAJI MILK", "price": "89 RS", "desc": "A milder version of sev bhaji cooked in a milk-based gravy for a rich and smooth taste.", "tags": ["Veg"], "img": "img/sev_bhaji_milk.jpg" },
+  { "id": 46, "cat": "सब्जी सदाबहार", "name": "चना मसाला / CHANA MASALA", "price": "139 RS", "desc": "Hearty brown chickpeas slow-cooked in a robust gravy of roasted spices and onions.", "tags": ["Veg"], "img": "img/chana_masala.jpg" },
+  { "id": 47, "cat": "सब्जी सदाबहार", "name": "बेसन गटटा / BESAN GATTA", "price": "79 RS", "desc": "Steamed gram flour rolls sliced and cooked in a spiced yogurt-based Marwari gravy.", "tags": ["Veg"], "img": "img/besan_gatta.jpg" },
+  { "id": 48, "cat": "सब्जी सदाबहार", "name": "राजमा मसाला / RAJMA MASALA", "price": "79 RS", "desc": "Red kidney beans cooked to perfection in a thick tomato-onion gravy with ginger and garlic.", "tags": ["Veg"], "img": "img/rajma_masala.jpg" },
 
-  { "id": 49, "cat": "दाल की कमाल", "name": "दाल फ्राय / DAL FRY", "price": "79 RS", "desc": "Yellow lentils tempered with spices", "tags": ["Veg"], "img": "img/dal_fry.jpg" },
-  { "id": 50, "cat": "दाल की कमाल", "name": "दाल हांडी / DAL HANDI", "price": "89 RS", "desc": "Lentils slow-cooked in a handi", "tags": ["Veg"], "img": "img/dal_handi.jpg" },
-  { "id": 51, "cat": "दाल की कमाल", "name": "दाल पालक / DAL PALAK", "price": "79 RS", "desc": "Lentils cooked with fresh spinach", "tags": ["Veg"], "img": "img/dal_palak.jpg" },
-  { "id": 52, "cat": "दाल की कमाल", "name": "दाल मखनी / DAL MAKHANI", "price": "119 RS", "desc": "Rich and buttery black lentils", "tags": ["Veg"], "img": "img/dal_makhani.jpg" },
-  { "id": 53, "cat": "दाल की कमाल", "name": "दाल लसुनीया / DAL LASUNIYA", "price": "99 RS", "desc": "Lentils with heavy garlic tadka", "tags": ["Veg"], "img": "img/dal_lasuniya.jpg" },
+  { "id": 49, "cat": "दाल की कमाल", "name": "दाल फ्राय / DAL FRY", "price": "79 RS", "desc": "Yellow arhar dal tempered with cumin, onions, tomatoes, and fresh coriander.", "tags": ["Veg"], "img": "img/dal_fry.jpg" },
+  { "id": 50, "cat": "दाल की कमाल", "name": "दाल हांडी / DAL HANDI", "price": "89 RS", "desc": "A mixture of lentils slow-cooked in a clay pot (Handi) for a deep, earthy flavor.", "tags": ["Veg"], "img": "img/dal_handi.jpg" },
+  { "id": 51, "cat": "दाल की कमाल", "name": "दाल पालक / DAL PALAK", "price": "79 RS", "desc": "A healthy blend of protein-rich lentils and fresh chopped spinach, lightly spiced.", "tags": ["Veg"], "img": "img/dal_palak.jpg" },
+  { "id": 52, "cat": "दाल की कमाल", "name": "दाल मखनी / DAL MAKHANI", "price": "119 RS", "desc": "Overnight soaked black lentils and kidney beans cooked with cream, butter, and love.", "tags": ["Veg"], "img": "img/dal_makhani.jpg" },
+  { "id": 53, "cat": "दाल की कमाल", "name": "दाल लसुनीया / DAL LASUNIYA", "price": "99 RS", "desc": "Yellow dal served with a special double tempering of golden-fried chopped garlic.", "tags": ["Veg"], "img": "img/dal_lasuniya.jpg" },
 
-  { "id": 54, "cat": "कुरकुरे स्टार्टर्स", "name": "पापड / PAPAD", "price": "39 RS", "desc": "Roasted or fried papadum", "tags": ["Veg"], "img": "img/papad.jpg" },
-  { "id": 55, "cat": "कुरकुरे स्टार्टर्स", "name": "मसाला पापड / MASALA PAPAD", "price": "49 RS", "desc": "Papad topped with spicy onions and tomatoes", "tags": ["Veg"], "img": "img/masala_papad.jpg" },
-  { "id": 56, "cat": "कुरकुरे स्टार्टर्स", "name": "फ्राईड पापड / FRIED PAPAD", "price": "49 RS", "desc": "Crispy deep fried papadum", "tags": ["Veg"], "img": "img/fried_papad.jpg" },
-  { "id": 57, "cat": "कुरकुरे स्टार्टर्स", "name": "खिचीया / KHICHIYA", "price": "59 RS", "desc": "Rice flour based crispy cracker", "tags": ["Veg"], "img": "img/khichiya.jpg" },
-  { "id": 58, "cat": "कुरकुरे स्टार्टर्स", "name": "खिचीया मसाला / KHICHIYA MASALA", "price": "59 RS", "desc": "Masala topped rice cracker", "tags": ["Veg"], "img": "img/khichiya_masala.jpg" },
-  { "id": 59, "cat": "कुरकुरे स्टार्टर्स", "name": "बटर खिचीया / BUTTER KHICHIYA", "price": "69 RS", "desc": "Rice cracker topped with butter", "tags": ["Veg"], "img": "img/butter_khichiya.jpg" },
+  { "id": 54, "cat": "कुरकुरे स्टार्टर्स", "name": "पापड / PAPAD", "price": "39 RS", "desc": "Light and crispy roasted or deep-fried lentil crackers, perfect as a meal starter.", "tags": ["Veg"], "img": "img/papad.jpg" },
+  { "id": 55, "cat": "कुरकुरे स्टार्टर्स", "name": "मसाला पापड / MASALA PAPAD", "price": "49 RS", "desc": "Crispy papad topped with a tangy mix of chopped onions, tomatoes, chillies, and chaat masala.", "tags": ["Veg"], "img": "img/masala_papad.jpg" },
+  { "id": 56, "cat": "कुरकुरे स्टार्टर्स", "name": "फ्राईड पापड / FRIED PAPAD", "price": "49 RS", "desc": "Deep-fried papadum that offers a richer taste and extra crunch to your meal.", "tags": ["Veg"], "img": "img/fried_papad.jpg" },
+  { "id": 57, "cat": "कुरकुरे स्टार्टर्स", "name": "खिचीया / KHICHIYA", "price": "59 RS", "desc": "Traditional Gujarati roasted rice flour crackers, light and extremely flavorful.", "tags": ["Veg"], "img": "img/khichiya.jpg" },
+  { "id": 58, "cat": "कुरकुरे स्टार्टर्स", "name": "खिचीया मसाला / KHICHIYA MASALA", "price": "59 RS", "desc": "Roasted rice cracker topped with fresh salad and spicy chutneys.", "tags": ["Veg"], "img": "img/khichiya_masala.jpg" },
+  { "id": 59, "cat": "कुरकुरे स्टार्टर्स", "name": "बटर खिचीया / BUTTER KHICHIYA", "price": "69 RS", "desc": "Khichiya papad brushed with melted butter for an enhanced, savory experience.", "tags": ["Veg"], "img": "img/butter_khichiya.jpg" },
 
-  { "id": 60, "cat": "सलाद", "name": "ग्रीन सलाद / GREEN SALAD", "price": "49 RS", "desc": "Fresh seasonal garden vegetables", "tags": ["Veg"], "img": "img/green_salad.jpg" },
-  { "id": 61, "cat": "सलाद", "name": "टोमेटो सलाद / TOMATO SALAD", "price": "39 RS", "desc": "Sliced fresh tomatoes", "tags": ["Veg"], "img": "img/tomato_salad.jpg" },
-  { "id": 62, "cat": "सलाद", "name": "काठीयावाडी कचुंबर / KATHIYAWADI KACHUMBER", "price": "79 RS", "desc": "Traditional chopped veg salad", "tags": ["Veg"], "img": "img/kachumber.jpg" },
-  { "id": 63, "cat": "सलाद", "name": "मीन्ट मसाला / MINT MASALA", "price": "79 RS", "desc": "Minty flavored fresh mix", "tags": ["Veg"], "img": "img/mint_masala.jpg" },
+  { "id": 60, "cat": "सलाद", "name": "ग्रीन सलाद / GREEN SALAD", "price": "49 RS", "desc": "A fresh platter of sliced cucumbers, carrots, tomatoes, onions, and lemon wedges.", "tags": ["Veg"], "img": "img/green_salad.jpg" },
+  { "id": 61, "cat": "सलाद", "name": "टोमेटो सलाद / TOMATO SALAD", "price": "39 RS", "desc": "Chilled and thinly sliced farm-fresh tomatoes seasoned with a pinch of salt.", "tags": ["Veg"], "img": "img/tomato_salad.jpg" },
+  { "id": 62, "cat": "सलाद", "name": "काठीयावाडी कचुंबर / KATHIYAWADI KACHUMBER", "price": "79 RS", "desc": "Finely chopped vegetable salad tossed with lemon juice, salt, and spicy green chillies.", "tags": ["Veg"], "img": "img/kachumber.jpg" },
+  { "id": 63, "cat": "सलाद", "name": "मीन्ट मसाला / MINT MASALA", "price": "79 RS", "desc": "Assorted salad vegetables flavored with a refreshing and zesty mint-spice blend.", "tags": ["Veg"], "img": "img/mint_masala.jpg" },
 
-  { "id": 64, "cat": "वेज स्टार्टर्स", "name": "पनीर चिल्ली / PANEER CHILLI", "price": "129 RS", "desc": "Paneer cubes in spicy soy sauce", "tags": ["Veg"], "img": "img/paneer_chilli.jpg" },
-  { "id": 65, "cat": "वेज स्टार्टर्स", "name": "वेज मन्चुरीयन / VEG MANCHURIAN", "price": "139 RS", "desc": "Vegetable dumplings in tangy sauce", "tags": ["Veg"], "img": "img/veg_manchurian.jpg" },
-  { "id": 66, "cat": "वेज स्टार्टर्स", "name": "चाईनीज भेल / CHINESE BHEL", "price": "89 RS", "desc": "Crispy noodles in tangy spicy sauce", "tags": ["Veg"], "img": "img/chinese_bhel.jpg" },
-  { "id": 67, "cat": "वेज स्टार्टर्स", "name": "वेज सेजवन राईस / VEG SCHEZWAN RICE", "price": "99 RS", "desc": "Spicy fried rice with Schezwan sauce", "tags": ["Veg"], "img": "img/veg_schezwan_rice.jpg" },
-  { "id": 68, "cat": "वेज स्टार्टर्स", "name": "वेज हक्का नुडल्स / VEG HAKKA NOODLES", "price": "99 RS", "desc": "Stir-fried classic Hakka noodles", "tags": ["Veg"], "img": "img/veg_hakka_noodles.jpg" },
+  { "id": 64, "cat": "वेज स्टार्टर्स", "name": "पनीर चिल्ली / PANEER CHILLI", "price": "129 RS", "desc": "Indo-Chinese style paneer cubes tossed in a tangy and spicy sauce with capsicum and onions.", "tags": ["Veg"], "img": "img/paneer_chilli.jpg" },
+  { "id": 65, "cat": "वेज स्टार्टर्स", "name": "वेज मन्चुरीयन / VEG MANCHURIAN", "price": "139 RS", "desc": "Crispy veg balls sautéed in a savory, spicy, and tangy Manchurian sauce.", "tags": ["Veg"], "img": "img/veg_manchurian.jpg" },
+  { "id": 66, "cat": "वेज स्टार्टर्स", "name": "चाईनीज भेल / CHINESE BHEL", "price": "89 RS", "desc": "A fusion snack made with crispy fried noodles, colorful veggies, and spicy schezwan sauce.", "tags": ["Veg"], "img": "img/chinese_bhel.jpg" },
+  { "id": 67, "cat": "वेज स्टार्टर्स", "name": "वेज सेजवन राईस / VEG SCHEZWAN RICE", "price": "99 RS", "desc": "Fluffy rice stir-fried with seasonal veggies and a bold, fiery Schezwan pepper sauce.", "tags": ["Veg"], "img": "img/veg_schezwan_rice.jpg" },
+  { "id": 68, "cat": "वेज स्टार्टर्स", "name": "वेज हक्का नुडल्स / VEG HAKKA NOODLES", "price": "99 RS", "desc": "Classic stir-fried noodles with crisp vegetables and a touch of soy sauce and spices.", "tags": ["Veg"], "img": "img/veg_hakka_noodles.jpg" },
 
-  { "id": 69, "cat": "देशी मिठास", "name": "चुरमा / CHURMA", "price": "99 RS", "desc": "Traditional crushed wheat sweet", "tags": ["Veg"], "img": "img/churma.jpg" },
-  { "id": 70, "cat": "देशी मिठास", "name": "ड्रायफ्रुट चुरमा / DRY FRUIT CHURMA", "price": "149 RS", "desc": "Crushed wheat sweet with dry fruits", "tags": ["Veg"], "img": "img/dry_fruit_churma.jpg" },
-  { "id": 71, "cat": "देशी मिठास", "name": "गुलाब जामुन / GULAB JAMUN", "price": "39 RS", "desc": "Fried milk balls in syrup", "tags": ["Veg"], "img": "img/gulab_jamun.jpg" },
-  { "id": 72, "cat": "देशी मिठास", "name": "रबडी / RABDI", "price": "49 RS", "desc": "Thickened sweetened milk", "tags": ["Veg"], "img": "img/rabdi.jpg" },
-  { "id": 73, "cat": "देशी मिठास", "name": "गाजर हलवा / GAJAR HALWA", "price": "49 RS", "desc": "Carrot pudding with milk and sugar", "tags": ["Veg"], "img": "img/gajar_halwa.jpg" },
-  { "id": 74, "cat": "देशी मिठास", "name": "मुंगदाल हलवा / MUNGDAL HALWA", "price": "49 RS", "desc": "Yellow lentil pudding", "tags": ["Veg"], "img": "img/mungdal_halwa.jpg" },
-  { "id": 75, "cat": "देशी मिठास", "name": "रसगुल्ला / RASGULLA", "price": "39 RS", "desc": "Soft cottage cheese balls in syrup", "tags": ["Veg"], "img": "img/rasgulla.jpg" },
-  { "id": 76, "cat": "देशी मिठास", "name": "रसमलाई / RASMALAI", "price": "49 RS", "desc": "Cottage cheese patties in saffron milk", "tags": ["Veg"], "img": "img/rasmalai.jpg" },
+  { "id": 69, "cat": "देशी मिठास", "name": "चुरमा / CHURMA", "price": "99 RS", "desc": "A traditional Rajasthani sweet made from coarsely ground wheat, ghee, and jaggery.", "tags": ["Veg"], "img": "img/churma.jpg" },
+  { "id": 70, "cat": "देशी मिठास", "name": "ड्रायफ्रुट चुरमा / DRY FRUIT CHURMA", "price": "149 RS", "desc": "Traditional churma enriched with a premium mix of almonds, cashews, and pistachios.", "tags": ["Veg"], "img": "img/dry_fruit_churma.jpg" },
+  { "id": 71, "cat": "देशी मिठास", "name": "गुलाब जामुन / GULAB JAMUN", "price": "39 RS", "desc": "Two pieces of soft, golden-brown milk dumplings soaked in a warm, fragrant sugar syrup.", "tags": ["Veg"], "img": "img/gulab_jamun.jpg" },
+  { "id": 72, "cat": "देशी मिठास", "name": "रबडी / RABDI", "price": "49 RS", "desc": "Slow-reduced milk dessert with layers of malai, flavored with saffron and cardamom.", "tags": ["Veg"], "img": "img/rabdi.jpg" },
+  { "id": 73, "cat": "देशी मिठास", "name": "गाजर हलवा / GAJAR HALWA", "price": "49 RS", "desc": "Warm carrot pudding slow-cooked with milk, khoya, and garnished with nuts.", "tags": ["Veg"], "img": "img/gajar_halwa.jpg" },
+  { "id": 74, "cat": "देशी मिठास", "name": "मुंगदाल हलवा / MUNGDAL HALWA", "price": "49 RS", "desc": "A rich and heavy dessert made from moong lentils roasted in pure ghee and sugar.", "tags": ["Veg"], "img": "img/mungdal_halwa.jpg" },
+  { "id": 75, "cat": "देशी मिठास", "name": "रसगुल्ला / RASGULLA", "price": "39 RS", "desc": "Soft and spongy cottage cheese balls cooked in a light and refreshing sugar syrup.", "tags": ["Veg"], "img": "img/rasgulla.jpg" },
+  { "id": 76, "cat": "देशी मिठास", "name": "रसमलाई / RASMALAI", "price": "49 RS", "desc": "Delicate paneer patties soaked in a thick, creamy, and saffron-flavored chilled milk.", "tags": ["Veg"], "img": "img/rasmalai.jpg" },
 
-  { "id": 77, "cat": "स्पे. महाराजा थाली", "name": "वेज थाली / VEG THALI", "price": "99 RS", "desc": "2 Sabji, Dal, 4 Chapati, Plain Rice, Chhas, Papad, Salad", "tags": ["Veg"], "img": "img/veg_thali.jpg" },
-  { "id": 78, "cat": "स्पे. महाराजा थाली", "name": "पंजाबी थाली / PUNJABI THALI", "price": "129 RS", "desc": "2 Sabji, Dal, Jeera Rice, Gulab Jamun, 3 Tandoori Roti, Chhas, Papad", "tags": ["Veg"], "img": "img/punjabi_thali.jpg" },
-  { "id": 79, "cat": "स्पे. महाराजा थाली", "name": "राजस्थानी थाली / RAJASTHANI THALI", "price": "119 RS", "desc": "2 Sabji, Dal, Plain Rice, Rasgulla, Chapati Roti, Chhas, Papad", "tags": ["Veg"], "img": "img/rajasthani_thali.jpg" },
-  { "id": 80, "cat": "स्पे. महाराजा थाली", "name": "दालवाटी चुरमा / DAL BATI CHURMA", "price": "129 RS", "desc": "Dal, 4 Bati, Churma, Dal, Chhas, Salad, Papad, Chatni", "tags": ["Veg"], "img": "img/dal_bati_churma.jpg" },
+  { "id": 77, "cat": "स्पे. महाराजा थाली", "name": "वेज थाली / VEG THALI", "price": "99 RS", "desc": "Complete meal: 2 Seasonal Veggies, Dal, 4 Chapati, Rice, Buttermilk, Papad, and Salad.", "tags": ["Veg"], "img": "img/veg_thali.jpg" },
+  { "id": 78, "cat": "स्पे. महाराजा थाली", "name": "पंजाबी थाली / PUNJABI THALI", "price": "129 RS", "desc": "Rich North Indian meal: Paneer Sabji, Veg Curry, Dal, Jeera Rice, Sweet, 3 Tandoori Roti, and more.", "tags": ["Veg"], "img": "img/punjabi_thali.jpg" },
+  { "id": 79, "cat": "स्पे. महाराजा थाली", "name": "राजस्थानी थाली / RAJASTHANI THALI", "price": "119 RS", "desc": "Taste of Marwar: Gatta Sabji, Special Curry, Dal, Rice, Sweet, Handmade Rotis, and Buttermilk.", "tags": ["Veg"], "img": "img/rajasthani_thali.jpg" },
+  { "id": 80, "cat": "स्पे. महाराजा थाली", "name": "दालवाटी चुरमा / DAL BATI CHURMA", "price": "129 RS", "desc": "The ultimate Rajasthani feast: 4 Bati, Spicy Dal, Sweet Churma, Garlic Chatni, and Buttermilk.", "tags": ["Veg"], "img": "img/dal_bati_churma.jpg" },
 
-  { "id": 81, "cat": "बासमती खजाना", "name": "प्लेन राईस / PLAIN RICE", "price": "49 RS", "desc": "Steamed basmati rice", "tags": ["Veg"], "img": "img/plain_rice.jpg" },
-  { "id": 82, "cat": "बासमती खजाना", "name": "जीरा राईस / JEERA RICE", "price": "69 RS", "desc": "Rice tempered with cumin seeds", "tags": ["Veg"], "img": "img/jeera_rice.jpg" },  
-  { "id": 83, "cat": "बासमती खजाना", "name": "मसाला राईस / MASALA RICE", "price": "79 RS", "desc": "Spiced flavorful rice", "tags": ["Veg"], "img": "img/masala_rice.jpg" },
-  { "id": 84, "cat": "बासमती खजाना", "name": "मसाला खिचडी / MASALA KHICHDI", "price": "89 RS", "desc": "Spiced rice and lentil porridge", "tags": ["Veg"], "img": "img/masala_khichdi.jpg" },
-  { "id": 85, "cat": "बासमती खजाना", "name": "वेज बिरयानी / VEG BIRYANI", "price": "99 RS", "desc": "Aromatic rice with vegetables", "tags": ["Veg"], "img": "img/veg_biryani.jpg" },
-  { "id": 86, "cat": "बासमती खजाना", "name": "पनीर पुलाव / PANEER PULAO", "price": "99 RS", "desc": "Rice cooked with paneer chunks", "tags": ["Veg"], "img": "img/paneer_pulao.jpg" },
-  { "id": 87, "cat": "बासमती खजाना", "name": "हैदराबादी बिरयानी / HYDERABADI BIRYANI", "price": "109 RS", "desc": "Spicy authentic Hyderabadi style biryani", "tags": ["Veg"], "img": "img/hyderabadi_biryani.jpg" },
-  { "id": 88, "cat": "बासमती खजाना", "name": "कडी खिचडी / KADI KHICHDI", "price": "79 RS", "desc": "Khichdi served with yogurt gravy", "tags": ["Veg"], "img": "img/kadi_khichdi.jpg" },
-  { "id": 89, "cat": "बासमती खजाना", "name": "कर्ड राईस / CURD RICE", "price": "69 RS", "desc": "Soft rice mixed with yogurt and seasoning", "tags": ["Veg"], "img": "img/curd_rice.jpg" },
+  { "id": 81, "cat": "बासमती खजाना", "name": "प्लेन राईस / PLAIN RICE", "price": "49 RS", "desc": "Aromatic and fluffy long-grain steamed Basmati rice, served fresh and hot.", "tags": ["Veg"], "img": "img/plain_rice.jpg" },
+  { "id": 82, "cat": "बासमती खजाना", "name": "जीरा राईस / JEERA RICE", "price": "69 RS", "desc": "Basmati rice tempered with clarified butter (ghee) and roasted cumin seeds.", "tags": ["Veg"], "img": "img/jeera_rice.jpg" },  
+  { "id": 83, "cat": "बासमती खजाना", "name": "मसाला राईस / MASALA RICE", "price": "79 RS", "desc": "Rice cooked with a bouquet of whole spices and chopped vegetables for a savory taste.", "tags": ["Veg"], "img": "img/masala_rice.jpg" },
+  { "id": 84, "cat": "बासमती खजाना", "name": "मसाला खिचडी / MASALA KHICHDI", "price": "89 RS", "desc": "A comforting and wholesome one-pot meal of rice and lentils with mild spices.", "tags": ["Veg"], "img": "img/masala_khichdi.jpg" },
+  { "id": 85, "cat": "बासमती खजाना", "name": "वेज बिरयानी / VEG BIRYANI", "price": "99 RS", "desc": "Layered aromatic basmati rice and garden-fresh vegetables cooked on slow fire with herbs.", "tags": ["Veg"], "img": "img/veg_biryani.jpg" },
+  { "id": 86, "cat": "बासमती खजाना", "name": "पनीर पुलाव / PANEER PULAO", "price": "99 RS", "desc": "A fragrant rice preparation featuring soft paneer cubes and light spices.", "tags": ["Veg"], "img": "img/paneer_pulao.jpg" },
+  { "id": 87, "cat": "बासमती खजाना", "name": "हैदराबादी बिरयानी / HYDERABADI BIRYANI", "price": "109 RS", "desc": "Spicy and authentic layered biryani with caramelized onions and a rich gravy punch.", "tags": ["Veg"], "img": "img/hyderabadi_biryani.jpg" },
+  { "id": 88, "cat": "बासमती खजाना", "name": "कडी खिचडी / KADI KHICHDI", "price": "79 RS", "desc": "A soothing combination of light khichdi served with a bowl of traditional yogurt curry.", "tags": ["Veg"], "img": "img/kadi_khichdi.jpg" },
+  { "id": 89, "cat": "बासमती खजाना", "name": "कर्ड राईस / CURD RICE", "price": "69 RS", "desc": "A cooling South Indian rice dish mixed with creamy yogurt and tempered with mustard and curry leaves.", "tags": ["Veg"], "img": "img/curd_rice.jpg" },
 
-  { "id": 90, "cat": "परोठा", "name": "आलु परोठा / ALOO PARATHA", "price": "49 RS", "desc": "Flatbread stuffed with spiced potatoes", "tags": ["Veg"], "img": "img/aloo_paratha.jpg" },
-  { "id": 91, "cat": "परोठा", "name": "पनीर परोठा / PANEER PARATHA", "price": "69 RS", "desc": "Flatbread stuffed with spiced paneer", "tags": ["Veg"], "img": "img/paneer_paratha.jpg" },
-  { "id": 92, "cat": "परोठा", "name": "चिज परोठा / CHEESE PARATHA", "price": "79 RS", "desc": "Flatbread stuffed with melted cheese", "tags": ["Veg"], "img": "img/cheese_paratha.jpg" },
-  { "id": 93, "cat": "परोठा", "name": "गोबी परोठा / GOBI PARATHA", "price": "49 RS", "desc": "Flatbread stuffed with spiced cauliflower", "tags": ["Veg"], "img": "img/gobi_paratha.jpg" },
-  { "id": 94, "cat": "परोठा", "name": "मिक्स वेज परोठा / MIX VEG PARATHA", "price": "53 RS", "desc": "Flatbread stuffed with mixed vegetables", "tags": ["Veg"], "img": "img/mix_veg_paratha.jpg" },
+  { "id": 90, "cat": "परोठा", "name": "आलु परोठा / ALOO PARATHA", "price": "49 RS", "desc": "Whole wheat flatbread stuffed with a spicy mashed potato filling, served with butter.", "tags": ["Veg"], "img": "img/aloo_paratha.jpg" },
+  { "id": 91, "cat": "परोठा", "name": "पनीर परोठा / PANEER PARATHA", "price": "69 RS", "desc": "Hearty flatbread stuffed with seasoned grated paneer and herbs, roasted to perfection.", "tags": ["Veg"], "img": "img/paneer_paratha.jpg" },
+  { "id": 92, "cat": "परोठा", "name": "चिज परोठा / CHEESE PARATHA", "price": "79 RS", "desc": "A kid-favorite paratha filled with gooey melted cheese and mild Italian seasoning.", "tags": ["Veg"], "img": "img/cheese_paratha.jpg" },
+  { "id": 93, "cat": "परोठा", "name": "गोबी परोठा / GOBI PARATHA", "price": "49 RS", "desc": "Whole wheat bread stuffed with finely grated and spiced cauliflower.", "tags": ["Veg"], "img": "img/gobi_paratha.jpg" },
+  { "id": 94, "cat": "परोठा", "name": "मिक्स वेज परोठा / MIX VEG PARATHA", "price": "53 RS", "desc": "Delicious flatbread containing a healthy mix of various seasonal vegetables and spices.", "tags": ["Veg"], "img": "img/mix_veg_paratha.jpg" },
 
-  { "id": 95, "cat": "चपाती / रोटी", "name": "फुलका रोटी / PHULKA ROTI", "price": "10 RS", "desc": "Soft puffed whole wheat bread", "tags": ["Veg"], "img": "img/phulka_roti.jpg" },
-  { "id": 96, "cat": "चपाती / रोटी", "name": "विट रोटला / WHEAT ROTLA", "price": "10 RS", "desc": "Traditional thick wheat flatbread", "tags": ["Veg"], "img": "img/wheat_rotla.jpg" },
-  { "id": 97, "cat": "चपाती / रोटी", "name": "बाजारी रोटला / BAJRI ROTLA", "price": "25 RS", "desc": "Pearl millet thick flatbread", "tags": ["Veg"], "img": "img/bajri_rotla.jpg" },
-  { "id": 98, "cat": "चपाती / रोटी", "name": "जवारी रोटला / JWARI ROTLA", "price": "30 RS", "desc": "Sorghum thick flatbread", "tags": ["Veg"], "img": "img/jwari_rotla.jpg" },
-  { "id": 99, "cat": "चपाती / रोटी", "name": "मकाई रोटला / MAKAI ROTLA", "price": "30 RS", "desc": "Maize thick flatbread", "tags": ["Veg"], "img": "img/makai_rotla.jpg" },
-  { "id": 100, "cat": "चपाती / रोटी", "name": "तवा पराठा / TAWA PARATHA", "price": "25 RS", "desc": "Flatbread roasted on a griddle", "tags": ["Veg"], "img": "img/tawa_paratha.jpg" },
-  { "id": 101, "cat": "चपाती / रोटी", "name": "मीसी रोटी / MISSI ROTI", "price": "50 RS", "desc": "Spiced gram flour flatbread", "tags": ["Veg"], "img": "img/missi_roti.jpg" },
-  { "id": 102, "cat": "चपाती / रोटी", "name": "खोबा रोटी / KHOBA ROTI", "price": "40 RS", "desc": "Traditional Rajasthani thick patterned bread", "tags": ["Veg"], "img": "img/khoba_roti.jpg" },
-  { "id": 103, "cat": "चपाती / रोटी", "name": "तंदुरी रोटी / TANDOORI ROTI", "price": "20 RS", "desc": "Clay oven baked flatbread", "tags": ["Veg"], "img": "img/tandoori_roti.jpg" },
-  { "id": 104, "cat": "चपाती / रोटी", "name": "तंदुरी नान / TANDOORI NAAN", "price": "35 RS", "desc": "Leavened oven baked bread", "tags": ["Veg"], "img": "img/tandoori_naan.jpg" },
-  { "id": 105, "cat": "चपाती / रोटी", "name": "बटर नान / BUTTER NAAN", "price": "50 RS", "desc": "Oven baked bread with butter", "tags": ["Veg"], "img": "img/butter_naan.jpg" },
+  { "id": 95, "cat": "चपाती / रोटी", "name": "फुलका रोटी / PHULKA ROTI", "price": "10 RS", "desc": "Classic, light, and puffed-up handmade whole wheat bread without oil.", "tags": ["Veg"], "img": "img/phulka_roti.jpg" },
+  { "id": 96, "cat": "चपाती / रोटी", "name": "विट रोटला / WHEAT ROTLA", "price": "10 RS", "desc": "Hand-patted thick wheat bread cooked on an iron griddle for a rustic taste.", "tags": ["Veg"], "img": "img/wheat_rotla.jpg" },
+  { "id": 97, "cat": "चपाती / रोटी", "name": "बाजारी रोटला / BAJRI ROTLA", "price": "25 RS", "desc": "Authentic pearl millet bread, rich in fiber and iron, best served with ghee.", "tags": ["Veg"], "img": "img/bajri_rotla.jpg" },
+  { "id": 98, "cat": "चपाती / रोटी", "name": "जवारी रोटला / JWARI ROTLA", "price": "30 RS", "desc": "Gluten-free sorghum flatbread, a traditional healthy staple of Indian villages.", "tags": ["Veg"], "img": "img/jwari_rotla.jpg" },
+  { "id": 99, "cat": "चपाती / रोटी", "name": "मकाई रोटला / MAKAI ROTLA", "price": "30 RS", "desc": "Sweet and savory maize flour flatbread, best enjoyed with winter veggies.", "tags": ["Veg"], "img": "img/makai_rotla.jpg" },
+  { "id": 100, "cat": "चपाती / रोटी", "name": "तवा पराठा / TAWA PARATHA", "price": "25 RS", "desc": "Multi-layered whole wheat paratha roasted on a tawa with a light coating of oil.", "tags": ["Veg"], "img": "img/tawa_paratha.jpg" },
+  { "id": 101, "cat": "चपाती / रोटी", "name": "मीसी रोटी / MISSI ROTI", "price": "50 RS", "desc": "Savory gram flour and wheat bread flavored with kasuri methi and onions.", "tags": ["Veg"], "img": "img/missi_roti.jpg" },
+  { "id": 102, "cat": "चपाती / रोटी", "name": "खोबा रोटी / KHOBA ROTI", "price": "40 RS", "desc": "An artistic Rajasthani thick bread with indentations, perfect for soaking up ghee.", "tags": ["Veg"], "img": "img/khoba_roti.jpg" },
+  { "id": 103, "cat": "चपाती / रोटी", "name": "तंदुरी रोटी / TANDOORI ROTI", "price": "20 RS", "desc": "Wheat bread baked in a traditional clay oven (Tandoor) for a smokey flavor.", "tags": ["Veg"], "img": "img/tandoori_roti.jpg" },
+  { "id": 104, "cat": "चपाती / रोटी", "name": "तंदुरी नान / TANDOORI NAAN", "price": "35 RS", "desc": "Soft and chewy leavened bread baked in the clay oven, perfect for rich curries.", "tags": ["Veg"], "img": "img/tandoori_naan.jpg" },
+  { "id": 105, "cat": "चपाती / रोटी", "name": "बटर नान / BUTTER NAAN", "price": "50 RS", "desc": "Indulgent tandoori naan brushed with a generous amount of fresh butter.", "tags": ["Veg"], "img": "img/butter_naan.jpg" },
 
-  { "id": 106, "cat": "आईस्क्रीम", "name": "वेनीला / VANILLA", "price": "39 RS", "desc": "Classic vanilla flavor ice cream", "tags": ["Veg"], "img": "img/vanilla_icecream.jpg" },
-  { "id": 107, "cat": "आईस्क्रीम", "name": "मेंगो / MANGO", "price": "39 RS", "desc": "Refreshing mango flavor ice cream", "tags": ["Veg"], "img": "img/mango_icecream.jpg" },
-  { "id": 108, "cat": "आईस्क्रीम", "name": "बटर स्कोच / BUTTER SCOTCH", "price": "49 RS", "desc": "Crunchy butterscotch ice cream", "tags": ["Veg"], "img": "img/butterscotch_icecream.jpg" },
-  { "id": 109, "cat": "आईस्क्रीम", "name": "चोकलेट/स्ट्रोबेरी / CHOCOLATE/STRAWBERRY", "price": "49 RS", "desc": "Rich chocolate or strawberry ice cream", "tags": ["Veg"], "img": "img/choc_straw_icecream.jpg" },
+  { "id": 106, "cat": "आईस्क्रीम", "name": "वेनीला / VANILLA", "price": "39 RS", "desc": "Smooth and creamy classic vanilla bean flavored ice cream.", "tags": ["Veg"], "img": "img/vanilla_icecream.jpg" },
+  { "id": 107, "cat": "आईस्क्रीम", "name": "मेंगो / MANGO", "price": "39 RS", "desc": "Fruity and refreshing ice cream made with the essence of real Alphonso mangoes.", "tags": ["Veg"], "img": "img/mango_icecream.jpg" },
+  { "id": 108, "cat": "आईस्क्रीम", "name": "बटर स्कोच / BUTTER SCOTCH", "price": "49 RS", "desc": "Sweet butterscotch ice cream filled with crunchy caramel nut pieces.", "tags": ["Veg"], "img": "img/butterscotch_icecream.jpg" },
+  { "id": 109, "cat": "आईस्क्रीम", "name": "चोकलेट/स्ट्रोबेरी / CHOCOLATE/STRAWBERRY", "price": "49 RS", "desc": "Your choice of rich dark chocolate or sweet strawberry flavored scoops.", "tags": ["Veg"], "img": "img/choc_straw_icecream.jpg" },
 
-  { "id": 110, "cat": "वोत्तर - कोल्ड्रींक्स", "name": "पानी बोतल / WATER BOTTLE", "price": "20 RS", "desc": "Packaged drinking water", "tags": ["Veg"], "img": "img/water_bottle.jpg" },
-  { "id": 111, "cat": "वोत्तर - कोल्ड्रींक्स", "name": "कोल्ड्रींक्स / COLD DRINKS", "price": "25 RS", "desc": "Assorted soft drinks", "tags": ["Veg"], "img": "img/cold_drinks.jpg" },
-  { "id": 112, "cat": "वोत्तर - कोल्ड्रींक्स", "name": "रेडबुल / RED BULL", "price": "135 RS", "desc": "Energy drink", "tags": ["Veg"], "img": "img/redbull.jpg" },
+  { "id": 110, "cat": "वोत्तर - कोल्ड्रींक्स", "name": "पानी बोतल / WATER BOTTLE", "price": "20 RS", "desc": "1 Litre of chilled, purified and packaged mineral drinking water.", "tags": ["Veg"], "img": "img/water_bottle.jpg" },
+  { "id": 111, "cat": "वोत्तर - कोल्ड्रींक्स", "name": "कोल्ड्रींक्स / COLD DRINKS", "price": "25 RS", "desc": "A selection of chilled carbonated soft drinks (200ml/250ml).", "tags": ["Veg"], "img": "img/cold_drinks.jpg" },
+  { "id": 112, "cat": "वोत्तर - कोल्ड्रींक्स", "name": "रेडबुल / RED BULL", "price": "135 RS", "desc": "Classic energy drink to give you wings and instant refreshment.", "tags": ["Veg"], "img": "img/redbull.jpg" }
 ];
 
     // Cart functionality
